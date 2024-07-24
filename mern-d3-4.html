@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr) 2fr;
+            grid-template-areas:
+                "header header header header"
+                "sidebar content1 content2 content2"
+                "sidebar content3 content3 content3";
+            border: 2px solid black;
+            width: 10%;
+            height: 10vh;
+        }
+        .header {
+            grid-area: header;
+            background-color: #ffd700;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #6495ed;
+        }
+        .content1 {
+            grid-area: content1;
+            background-color: #add8e6;
+        }
+        .content2 {
+            grid-area: content2;
+            background-color: #f08080;
+        }
+        .content3 {
+            grid-area: content3;
+            background-color: #98fb98;
+        }
+        .grid-container > div {
+            border: 1px solid black; 
+                }
+    </style>
+</head>
+<body>
+    <center>    <div class="grid-container">
+        <div class="header">1</div>
+        <div class="sidebar">2</div>
+        <div class="content1">3</div>
+        <div class="content2">4</div>
+        <div class="content3">5</div>
+    </div>
+</center>
+
+</body>
+</html>

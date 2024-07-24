@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 calc(25% - 20px); 
+            box-sizing: border-box;
+        }
+        img
+        {
+            width: 400px;
+            height: 300px;
+        }
+        .header {
+            background-color: #6a0dad; /* Purple color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .nav {
+            background-color: #4b0082; /* Darker purple */
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .nav a:hover {
+            background-color: #dda0dd; /* Light purple */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Army's Bangtan World</h1>
+    </div>
+    <div class="nav">
+        <a href="https://www.google.com/search?q=bts&oq=bts&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyCggCEAAYsQMYgAQyCggDEC4YsQMYgAQyCggEEAAYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQc1OTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Home</a>
+        <a href="https://bts.ibighit.com/">About</a>
+        <a href="https://www.youtube.com/watch?v=CWUkZszxY_c">Songs</a>
+        <a href="https://www.youtube.com/playlist?list=PLdoyCMIqqsKJGGNnaaunt8zLFeKSezvsZ">RUN BTS</a>
+    </div>
+    <div class="container">
+        <div class="item"><a href="https://www.instagram.com/rkive/"><img src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/11/03/c262ae6e-1d81-11eb-99d6-deeedd63f648_image_hires_174152.jpg"></a></div>
+        <div class="item"><a href="https://www.instagram.com/thv/"><img src="https://i.pinimg.com/236x/eb/8d/c2/eb8dc2cd71178cbfb20ed2ec7e42b98a.jpg"></a></div>
+        <div class="item"><a href="https://www.instagram.com/uarmyhope/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnkOCZ39AKBl-N7EnUevTCcM25axkfKRXf2w&s"></a></div>
+        <div class="item"><a href="https://www.instagram.com/agustd/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnD4fSZd4W0qTLk5ctaCkp3iyIDmuqSutMeQ&s"></a></div>
+        <div class="item"><a href="https://www.instagram.com/j.m/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGKNM1IKd4TGY6JXNINOmddHcKw4Gb3-3J-A&s"></a></div>
+        <div class="item"><a href="www.google.com"><img src="https://e1.pngegg.com/pngimages/698/455/png-clipart-bts-you-never-walk-alone-solo-bts-member.png"></a></div>
+        <div class="item"><a href="https://www.instagram.com/jin/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJNG1MyWD8iM2jL0OZhS-Lp5LVbNMZwow7Q&s"></a></div>
+    </div>
+</body>
+</html>
