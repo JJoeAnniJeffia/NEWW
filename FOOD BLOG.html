@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Food</title>
+    <style>
+        /* General Styles */
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #b7515173;
+        }
+
+        /* Header Styles */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Main Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article header h2 {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        section h3 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position:absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            header, nav ul {
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Favorite Food: Pizza</h1>
+        <nav>
+            <ul>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#recipe">Recipe</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="description">
+            <header>
+                <h2>Description</h2>
+            </header>
+            <p>Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients.</p>
+        </article>
+
+        <article id="ingredients">
+            <header>
+                <h2>Ingredients</h2>
+            </header>
+            <section>
+                <h3>Base Ingredients</h3>
+                <ul>
+                    <li>Flour</li>
+                    <li>Yeast</li>
+                    <li>Water</li>
+                    <li>Salt</li>
+                    <li>Olive Oil</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Toppings</h3>
+                <ul>
+                    <li>Tomato Sauce</li>
+                    <li>Mozzarella Cheese</li>
+                    <li>Pepperoni</li>
+                    <li>Basil</li>
+                    <li>Olives</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="recipe">
+            <header>
+                <h2>Recipe</h2>
+            </header>
+            <section>
+                <h3>Preparation</h3>
+                <p>Mix flour, yeast, water, salt, and olive oil to form the dough. Let it rise for 1-2 hours. Preheat the oven to 475°F (245°C). Roll out the dough, spread tomato sauce, sprinkle cheese and add toppings.</p>
+            </section>
+            <section>
+                <h3>Cooking</h3>
+                <p>Bake the pizza for about 10-15 minutes until the crust is golden and the cheese is bubbly and slightly browned.</p>
+            </section>
+        </article>
+
+        <article id="benefits">
+            <header>
+                <h2>Benefits</h2>
+            </header>
+            <p>Pizza can be a balanced meal with carbohydrates from the dough, protein and fat from the cheese, and vitamins and minerals from various toppings like vegetables.</p>
+        </article>
+    </main>
+
+</body>
+</html>
