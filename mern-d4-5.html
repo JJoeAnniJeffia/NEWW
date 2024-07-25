@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #622d2d;
+    }
+    
+    .h11 {
+        color: white;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        color: rgb(224, 176, 176);
+    }
+    
+    .containe {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .containe img
+    {
+        width: 300px;
+        height: 300px;
+    }
+    .item {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        flex: 1 1 calc(33% - 20px); 
+        box-sizing: border-box;
+    }
+    
+    .item img {
+        width: 300px;
+        height: 300px;
+        transition: transform 1s;
+    }
+    
+    .item:hover img {
+        transform: rotate(360deg);
+    }
+    
+    header {
+        background: #dc5454;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #77aadd 3px solid;
+        position: relative;
+    }
+    
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    header ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+    
+    header #branding {
+        float: left;
+    }
+    
+    header #branding h1 {
+        margin: 0;
+    }
+    
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+    
+    .marquee-text {
+        background: #dc5454;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+    
+    .showcase {
+        background: url('showcase.jpg') no-repeat center center/cover;
+        color: #fff;
+        height: 400px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .showcase h1 {
+        font-size: 55px;
+    }
+    
+    .showcase p {
+        font-size: 20px;
+    }
+    
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
+        margin-top: 20px;
+        color: #180868;
+    }
+    
+    .main-content aside {
+        background: #c78a8a;
+        padding: 20px;
+        border: #ccc 1px solid;
+        transition: transform 2s;
+    }
+    
+    .main-content aside:hover {
+        transform: rotateY(360deg);
+    }
+    
+    .main-content article {
+        background: #fff;
+        padding: 20px;
+        border: #ccc 1px solid;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    article h2 {
+        margin-top: 0;
+    }
+    
+    article p {
+        line-height: 1.6;
+    }
+    
+    footer {
+        background: #db1818;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+    .card img
+    {
+        width: 300px;
+        height: 300px;
+    }
+    .card {
+        transform: perspective(1000px) rotateY(0deg);
+        transition: transform 1s;
+    }
+    
+    .card:hover {
+        transform: perspective(1000);
+    }
+    </style>
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 class="h11">JAJ Foodie Pie</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <marquee behavior="scroll" direction="left" class="marquee-text">Welcome to JAJ Foodie Pie! Enjoy our delicious recipes and cooking tips!</marquee>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Welcome to My Food Blog</h1>
+            <p>Delicious recipes and cooking tips</p>
+        </div>
+        <div class="containe">
+            <div class="item rotate"><a href="https://en.wikipedia.org/wiki/Pasta"><img src="https://www.allrecipes.com/thmb/QiGptPjQB5mqSXGVxE4sLPMJs_4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-269500-creamy-garlic-pasta-Beauties-2x1-bcd9cb83138849e4b17104a1cd51d063.jpg"></a></div>
+            <div class="item rotate"><a href="https://natashaskitchen.com/caesar-salad-recipe/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSRxye2TDzRDi_QOgeILnJMO6U3cEWJw6Fw&s"></a></div>
+            <div class="item rotate"><a href="https://en.wikipedia.org/wiki/Chocolate_cake"><img src="https://i.pinimg.com/736x/97/16/81/9716817d843ed03e1e9b2ea3749b0344.jpg"></a></div>
+        </div>
+    </section>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container main-content">
+        <aside class="rotateY">
+            <h2>About Me</h2>
+            <p>I'm a passionate food lover and blogger sharing my favorite recipes and cooking tips.</p>
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">Lunch</a></li>
+                <li><a href="#">Dinner</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="#">Snacks</a></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+        </aside>
+
+        <div>
+            <article class="card">
+                <h3>Delicious Pasta</h3>
+                <img src="https://beatthebudget.com/wp-content/uploads/2022/06/Pink-Sauce-Pasta-Tiktok-Pasta-featured-image-1200-x-1500px.jpg" alt="Delicious Pasta">
+                <p>This pasta is made with fresh ingredients and is perfect for a quick dinner.</p>
+            </article>
+            <article class="card">
+                <h3>Healthy Salad</h3>
+                <img src="https://i.pinimg.com/736x/84/3b/b7/843bb728570c377203bc66ac7b6a2416.jpg" alt="Healthy Salad">
+                <p>This salad is packed with nutrients and is a great option for a light lunch.</p>
+            </article>
+            <article class="card">
+                <h3>Chocolate Cake</h3>
+                <img src="https://thenovicechefblog.com/wp-content/uploads/2020/05/Chocolate-Cake-Recipe-1.jpeg" alt="Chocolate Cake">
+                <p>This chocolate cake is rich, moist, and perfect for dessert.</p>
+            </article>
+            <article class="card">
+                <h3>Spicy Tacos</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdObBXnnSoMVh3LaM5n5YRoxhv-OpcRENtKg&s" alt="Spicy Tacos">
+                <p>These tacos are packed with flavor and are perfect for a quick and easy meal.</p>
+            </article>
+            <article class="card">
+                <h3>Fruit Smoothie</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49b0U6FJ02k8nIYAA-MZKmSlO1YfLBqeOFw&s" alt="Fruit Smoothie">
+                <p>This smoothie is made with fresh fruits and is a great way to start your day.</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="#feedback">FeedBack</a></p>
+        <p>JAJ Foodie Pie &copy; 2024</p>
+    </footer>
+</body>
+</html>
