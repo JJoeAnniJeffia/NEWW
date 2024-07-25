@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            background-image: url('https://www.wallpaperflare.com/static/170/142/516/wavy-background-pale-background-wallpaper.jpg');
+            color: rgb(34, 25, 25);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 10px;
+        }
+
+        .box {
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/125/365/small/beautiful-blue-bokeh-background.jpg');
+            flex: 1;
+            padding: 20px;
+            background-color: #ccc;
+            text-align: center;
+            border: 1px solid #999;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .box:hover {
+            background-color: #bbb;
+            transform: scale(1.05);
+            transform-style: preserve-3d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                margin-bottom: 10px;
+            }
+        }
+        h4:hover
+        {
+            transform: scale(2);
+            transform-style: preserve-3d;
+        }
+        img
+        {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Desktop to Mobile View </h1>
+    </header>
+    <div class="container">
+
+        <div class="box"><h4><a href="#home">Home</a></h4><br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, facere.</p></div>
+        <div class="box"><h4><a href="#set">Settings</a></h4><br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, facere.</p></div>
+        <div class="box"><h4><a href="#abt">About us</a></h4><br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, facere.</p></div>
+        <div class="box"><h4><a href="#hel">Help</a></h4><br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, facere.</p></div>
+    </div>
+    <div class="container">
+
+        <div class="box"><a href="https://en.wikipedia.org/wiki/Pasta"><img src="https://www.allrecipes.com/thmb/QiGptPjQB5mqSXGVxE4sLPMJs_4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-269500-creamy-garlic-pasta-Beauties-2x1-bcd9cb83138849e4b17104a1cd51d063.jpg"></a></div>
+            <div class="box"><a href="https://natashaskitchen.com/caesar-salad-recipe/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSRxye2TDzRDi_QOgeILnJMO6U3cEWJw6Fw&s"></a></div>
+            <div class="box"><a href="https://en.wikipedia.org/wiki/Chocolate_cake"><img src="https://i.pinimg.com/736x/97/16/81/9716817d843ed03e1e9b2ea3749b0344.jpg"></a></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Responsive Design Example</p>
+    </footer>
+</body>
+</html>

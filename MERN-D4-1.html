@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: brown;
+        }
+       @media print and (orientation)
+       {
+        h1 
+        {
+color: black;
+        }
+    }
+        @media screen and (max-width:1000px)
+        {
+           h1 
+           {
+            color: aqua;
+           }
+        }
+        @media screen and (max-width:400px)
+        {
+           h1 
+           {
+            color:gold;
+           }
+        }
+        .box {
+  width: 1200px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: brown;
+
+}
+.box1 {
+  width: 700px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(69, 231, 55);
+
+}
+.box2 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(216, 88, 56);
+
+}
+@media screen and (min-width:1000px)
+        {
+          .box{
+        background-color: aqua;
+          }
+        }
+        @media screen and (min-width:2000px)
+        {
+          .box{
+        background-color: rgb(33, 8, 73);
+          }
+        }
+        @media screen and (max-width:1000px)
+        {
+          .box1{
+        background-color: rgb(238, 12, 12);
+          }
+        }
+        @media screen and (max-width:1500px)
+        {
+          .box1{
+        background-color: rgb(115, 86, 162);
+          }
+        }
+        @media screen and (max-width:1000px)
+        {
+          .box2{
+        background-color: rgba(122, 9, 9, 0.034);
+          }
+        }
+        @media screen and (max-width:2000px)
+        {
+          .box2{
+        background-color: rgb(99, 141, 182);
+          }
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div class="box">
+        
+      </div>
+    <div class="box1">
+        
+      </div>
+    <div class="box2">
+        
+      </div>
+      
+    </center>
+</body>
+</html>s
